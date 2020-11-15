@@ -9,3 +9,105 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+table, th, td {
+  border: 3px solid orangered;
+  border-collapse: inherit;
+  width: 33%; }
+th, td {
+  padding: 5px;
+  text-align: left
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.box {
+  float: left;
+  
+  padding: 50px;
+}
+.box {
+  float: left;
+  height:300px;
+  padding: 50px;
+}
+.clearfix : after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+.redbox {
+  background-color: red;
+  /scroll bar for long text/
+  overflow: auto;
+}
+.yellowbox {
+  background-color: yellow;
+}
+.bluebox {
+  background-color: lightblue;
+}
+.purplebox {
+  background-color: purple;
+}
+.greybox {
+  background-color: grey;
+}
+.pinkbox {
+  background-color: pink;
+}
+.threecol {
+  width: 33.33%;
+}
+.twocol {
+  width: 50%;
+}
+.onecol {
+  width: 100%;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+  Scrollbar
+}
+.ScrollStyle
+{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+<div class="ScrollStyle">
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+  Scrollbar Test!<br/>
+</div>
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+body {
+  font-family: sans-serif;
+  magrin: 2em;
+  background-image: url("https://cdn.glitch.com/94464427-9655-426b-aa70-f3245c8ca85d%2Fphoto-1554189097-ffe88e998a2b.jpg?v=1605152113860")
+}
