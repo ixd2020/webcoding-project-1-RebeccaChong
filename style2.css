@@ -1,0 +1,84 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 4em;
+  background-image: url("https://cdn.glitch.com/36939b26-6269-4d97-baa8-d6e3842270f1%2Fphoto-1465146344425-f00d5f5c8f07.jpg?v=1606922536383");
+  background-repeat: no-repeat;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #F9D6A9;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #D89339;
+  color: white;
+}
+
+h1 {
+  font-style: italic;
+  color: Black;
+  text-align: center;
+}
+h2 {
+  font-style: italic;
+  color: Purple;
+  text-align: center;
+}
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 6000px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
