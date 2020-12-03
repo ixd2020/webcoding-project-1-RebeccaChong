@@ -2,112 +2,228 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: 4em;
+  background-image: url("https://cdn.glitch.com/36939b26-6269-4d97-baa8-d6e3842270f1%2Fphoto-1465146344425-f00d5f5c8f07.jpg?v=1606922536383");
+  background-repeat: no-repeat;
 }
 
+#navigation
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #F9D6A9;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #D89339;
+  color: white;
+}
+</style>
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: Black;
+  text-align: center;
 }
-table, th, td {
-  border: 3px solid orangered;
-  border-collapse: inherit;
-  width: 33%; }
-th, td {
-  padding: 5px;
-  text-align: left
+h2 {
+  font-style: italic;
+  color: Purple;
+  text-align: center;
 }
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-* {
-  box-sizing: border-box;
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 6000px;
 }
-.box {
-  float: left;
-  
-  padding: 50px;
-}
-.box {
-  float: left;
-  height:300px;
-  padding: 50px;
-}
-.clearfix : after {
-  content: "";
-  clear: both;
-  display: table;
-}
-* {
-  box-sizing: border-box;
-}
-.redbox {
-  background-color: red;
-  /scroll bar for long text/
-  overflow: auto;
-}
-.yellowbox {
-  background-color: yellow;
-}
-.bluebox {
-  background-color: lightblue;
-}
-.purplebox {
-  background-color: purple;
-}
-.greybox {
-  background-color: grey;
-}
-.pinkbox {
-  background-color: pink;
-}
-.threecol {
-  width: 33.33%;
-}
-.twocol {
-  width: 50%;
-}
-.onecol {
+
+.image {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
-/* unvisited link */
-a:link {
-  color: red;
-  Scrollbar
-}
-.ScrollStyle
-{
-    max-height: 150px;
-    overflow-y: scroll;
-}
-<div class="ScrollStyle">
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-  Scrollbar Test!<br/>
-</div>
-/* visited link */
-a:visited {
-  color: green;
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* mouse over link */
-a:hover {
-  color: pink;
+.container:hover .overlay {
+  opacity: 1;
 }
+</style>
 
-/* selected link */
-a:active {
-  color: blue;
-}
+
+<style>
 body {
-  font-family: sans-serif;
-  magrin: 2em;
-  background-image: url("https://cdn.glitch.com/94464427-9655-426b-aa70-f3245c8ca85d%2Fphoto-1554189097-ffe88e998a2b.jpg?v=1605152113860")
+  font-family: Arial;
+  margin: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+</style>
