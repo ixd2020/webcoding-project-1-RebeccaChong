@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/style2.css" />
 
 <h2>
   Here are some things you might want to know about me 
@@ -12,24 +12,40 @@
   <hr>
 For me, computer generated artwork lacks the warmth and charm of something hand drawn, so I create all my artwork by hand; drawing first in pencil, then redrawing in ink. I love intricate details and try to craft images that invite you to pause and examine the artwork a little closer. Hidden within the flora and fauna are rogue butterflies, half hidden hedgehogs and even the odd little owl!
 </p>
-<p>
+<p1 class ="line1">
   I grew up on a fish farm in rural Aberdeenshire, Scotland where my little sister and I had a very ‘free range’ childhood. We played outdoors; buildings dens, creating secret gardens and paddling in the little stream behind our house. This kind of play cultivated in me a wild imagination and a love of nature from an early age. I always loved to draw. I can’t ever remember a time when I didn’t want to pursue a creative career (except for a brief stint when I thought I wanted to be an astronaut – this quickly wore off).
-<hr>
+</p1>
+  <hr>
+<p2 class="line2">
 In 2005, after graduating from Textile Design at Duncan of Jordanstone College of Art and Design in Dundee, I interned for a while before making the move to set-up my own studio. Initially I made hand printed wallpaper and small collections of home accessories, but the recession hit. Business was tricky and it forced me to realise my heart wasn’t in manufacturing and selling, it was in drawing.
+</p2>
 <hr>
+<p3 class="line3">
 I shut the studio, sold all my equipment and set-up as a freelance Illustrator from a little desk in the corner of my 1 bedroom flat. I worked 2 part time jobs to pay the bills and drew the rest of the time. I took the overnight bus to London on my days off to trawl round the offices of Art Directors and Commissioning Editors with my portfolio. I called these my ‘Commission Missions’.
+</p3>
 <hr>
+<p4 class="line4">
 I ignored advice to ‘diversify’ my portfolio. My signature style of hand drawn, black and white artwork paid off and earned me a list of freelance clients ranging from Nike to Absolut Vodka and Smart Car to Chipotle. Then things got really interesting…
-<hr>
-In late 2011 I was approached by a publisher to make a colouring book for children. I loved the colouring book idea, but wanted to do something a bit different. My pitch for a sophisticated, grown up colouring book seemed a little odd at that time, but I drew up the first 5 pages, sent them over and got the thumbs up. In spring 2013 Secret Garden was launched. What followed surprised us all…
-<hr>
-I was off on maternity leave in the Autumn of 2014 after having my daughter, Evie, when news began to filter through of the first 1 million book sales. It seemed incredible, it still does! 4 years later and we’ve sold over 21 million books worldwide in over 40 countries.
-<hr>
-When Evie was 2, I began making up stories for her at bedtime about a little girl called Inky Ivy who went on magical adventures. ‘Mum, you should make this into a book!’ she said one night. And the idea for Ivy and the Inky Butterfly was hatched! A story book to colour, a wonderful tale that you can bring to life and make your own. I was pregnant with our second daughter by this time, so I drew around an ever growing baby bump only putting my pencil down 24 hours before she was born. 9 days later a tiny newborn baby called Mia lay sleeping in her moses basket under my desk. I wasn’t sure if I was an expert multitasker or just the worst mother in the world, but it worked for us!
-<hr>
-Secret Garden, Enchanted Forest, Lost Ocean, Magical Jungle, Johanna’s Christmas, Ivy and the Inky Butterfly  and World of Flowers have been embraced by Colourists the world over and I’m privileged to be a part of this amazing creative community. In 2019 my adventures took a new direction and I released my debut drawing book, How to Draw Inky Wonderlands – sharing all my secret tricks and tips, revealing drawing isn’t scary and proving that anyone can pick up a pencil and draw!
-<hr>
-These days I spend my time in the studio flitting between creating artwork for my books, dreaming up ideas for new products to be emblazoned with my black and white artwork and of course, organising all those pens and pencils! Oh, and did I mention I’m a Guinness World Record Holder?! 
-</p>
+</p4>
 
-<button class="btn";< a href="index.html">Back</a></button>
+<button onclick="goBack()">Go Back</button>
+<button onclick="myFunction()">Next Text</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<script>
+  
+
+  
+function myFunction() {
+  
+  document.querySelector(".line1").textContent = "In late 2011 I was approached by a publisher to make a colouring book for children. I loved the colouring book idea, but wanted to do something a bit different. My pitch for a sophisticated, grown up colouring book seemed a little odd at that time, but I drew up the first 5 pages, sent them over and got the thumbs up. In spring 2013 Secret Garden was launched. What followed surprised us all…"
+  document.querySelector(".line2").textContent = "I was off on maternity leave in the Autumn of 2014 after having my daughter, Evie, when news began to filter through of the first 1 million book sales. It seemed incredible, it still does! 4 years later and we’ve sold over 21 million books worldwide in over 40 countries."
+  document.querySelector(".line3").textContent = "When Evie was 2, I began making up stories for her at bedtime about a little girl called Inky Ivy who went on magical adventures. ‘Mum, you should make this into a book!’ she said one night. And the idea for Ivy and the Inky Butterfly was hatched! A story book to colour, a wonderful tale that you can bring to life and make your own. I was pregnant with our second daughter by this time, so I drew around an ever growing baby bump only putting my pencil down 24 hours before she was born. 9 days later a tiny newborn baby called Mia lay sleeping in her moses basket under my desk. I wasn’t sure if I was an expert multitasker or just the worst mother in the world, but it worked for us!"
+  document.querySelector(".line4").textContent = "Secret Garden, Enchanted Forest, Lost Ocean, Magical Jungle, Johanna’s Christmas, Ivy and the Inky Butterfly  and World of Flowers have been embraced by Colourists the world over and I’m privileged to be a part of this amazing creative community. In 2019 my adventures took a new direction and I released my debut drawing book, How to Draw Inky Wonderlands – sharing all my secret tricks and tips, revealing drawing isn’t scary and proving that anyone can pick up a pencil and draw!"
+}
+</script>

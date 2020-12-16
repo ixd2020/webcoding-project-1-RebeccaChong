@@ -1,5 +1,5 @@
 <!-- import the webpage's stylesheet -->
-<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/style2.css" />
 
 <!-- import the webpage's javascript file -->
 <script src="/script.js" defer></script>
@@ -50,5 +50,89 @@
       ></iframe>
       <p>This video will show you how i color my butterflies.</p>
     </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>Video 5</h2>
+      <iframe
+        width="320"
+        height="215"
+        src="https://www.youtube.com/embed/z6rd7PDAMJY"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>This video will show you my top 5 colouring tips.</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>Video 4</h2>
+      <iframe
+        width="320"
+        height="215"
+        src="https://www.youtube.com/embed/IdI9J49cG00"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>This video will show you my ways of colouring leaves.</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+      <h2>Video 6</h2>
+      <iframe
+        width="320"
+        height="215"
+        src="https://www.youtube.com/embed/_3U4LafK0Fc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>This video will show you my way of colouring treasure.</p>
+    </div>
   </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("button").click(function() {
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(3000);
+      $("#div4").fadeIn(3000);
+    });
+  });
+</script>
+
+<button>Click to find more links!</button><br /><br />
+
+<div
+  id="div1"
+  style="width:230px;height:40px;display:none;background-color:pink;"
+>
+  https://youtu.be/2Oxx-J5SFbU
+</div>
+<br />
+<div
+  id="div2"
+  style="width:230px;height:40px;display:none;background-color:pink;"
+>
+  https://youtu.be/Ibec5bMvV1s
+</div>
+<br />
+<div
+  id="div3"
+  style="width:230px;height:40px;display:none;background-color:pink;"
+>
+  https://youtu.be/PfBeM0cPMYc
+</div>
+<br />
+<div
+  id="div4"
+  style="width:230px;height:40px;display:none;background-color:pink;"
+>
+  Head to My Youtube channel "Johanna Basford for more!"
+</div>
+
+<button onclick="goBack()">Go Back</button>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
